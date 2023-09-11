@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.1s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#a1 {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#a2 {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+#a3 {
+  top: 140px;
+  background-color: #f44336; /* Red */
+}
+
+#a4 {
+  top: 200px;
+  background-color: #555 /* Light Black */
+}
+
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="a1">1</a>
+        <a href="#" id="a2">2</a>
+        <a href="#" id="a3">3</a>
+        <a href="#" id="a4">4</a>
+      </div>
+    <div>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoverable Sidenav Buttons</h1>
+    <p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hover over the buttons in the left side navigation to open them</p>
+    </div>
+</body>
+</html>

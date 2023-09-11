@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vertical Navigation Bar</title>
+    <style>
+        /* Style for the navigation bar container */
+        .nav-container {
+            width: 200px; /* Set the width of the navigation bar */
+            background-color: lightblue;
+            color: blue;
+            font-size: large;
+        }
+
+        /* Style for the navigation list */
+        .nav-list {
+            list-style: none;
+            padding: 0px;
+            height: fit-content;
+
+        }
+
+        /* Style for navigation items (links) */
+        .nav-item {
+            margin-bottom: 10px; /* Add spacing between items */
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: blue;
+            display: block;
+        }
+
+        /* Hover effect for links */
+        .nav-link:hover {
+            background-color: orange;
+            color: #fff;
+            width: 100%;
+        }
+
+        /* Horizontal styles */
+       /* Style for navigation items (links) */
+        .nav-item-horizontal {
+            /* margin: 5px; Add spacing between items */
+            display: inline;
+            /* background-color: rgba(128, 128, 128, 0.407); */
+            border-right: 1px solid blue;
+            padding: 5px;
+            
+            /* margin-top: 0%; */
+    
+        }
+        
+                /* Style for the navigation list */
+        .nav-list-horizontal {
+            list-style: none;
+            padding: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgba(128, 128, 128, 0.407);
+            /* box-sizing: border-box; */
+            /* background-color: rgba(128, 128, 128, 0.407); */
+            
+
+        }
+        .nav-item-horizontal-i {
+            display: inline;
+            padding: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+    
+        }
+        .nav-container-horizontal {
+            width: fit-content; /* Set the width of the navigation bar */
+            color: blue;
+            font-size: large;
+            box-sizing: border-box;
+        }
+        .nav-link-horizontal {
+            text-decoration: none;
+            color: blue;
+            display: inline;
+        }
+
+        /* Hover effect for links */
+        .nav-link-horizontal:hover {
+            background-color: grey;
+            color: #fff;
+            width: 100%;
+        }
+        .mainContainer {
+            border: 1px solid black;
+            padding: 5px;
+            padding-top: 3px;
+            width: fit-content;
+        }
+        .mainContainer-horizontal {
+            border: 1px solid black;
+            padding: 4px;
+        }
+        .parentClass {
+            display: flex;
+            flex-direction: row;
+        }
+        .parentClass-horizontal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 75%;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<div class="parentClass">
+    <div>
+    <p> &nbsp;&nbsp; <b> Vertical Navigation bar </b> </p>
+    <div class="mainContainer">
+    <div class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Java</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CSS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">HTML</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Bootstrap</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+<div class = "parentClass-horizontal">
+    <p> &nbsp;&nbsp; <b> Horizontal Navigation bar </b> </p>
+    <div class="mainContainer-horizontal">
+<div class="nav-container-horizontal">
+    <ul class="nav-list-horizontal">
+        <li class="nav-item-horizontal"><a href="#" class="nav-link-horizontal">Home &nbsp;</a></li>
+        <li class="nav-item-horizontal"><a href="#" class="nav-link-horizontal">&nbsp;Java &nbsp;</a></li>
+        <li class="nav-item-horizontal"><a href="#" class="nav-link-horizontal">&nbsp;HTML &nbsp;</a></li>
+        <li class="nav-item-horizontal"><a href="#" class="nav-link-horizontal">&nbsp;CSS &nbsp; &nbsp;</a></li>
+        <li class="nav-item-horizontal-i"><a href="#" class="nav-link-horizontal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
