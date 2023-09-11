@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Form</title>
+    <style>
+        /* Style for labels */
+        label {
+            display: inline-block;
+            width: 150px; /* Adjust the width as needed for consistent spacing */
+            text-align: left; /* Align labels to the left for uniformity */
+            margin-right: 10px; /* Add margin between label and input */
+        }
+
+        /* Style for input textboxes */
+        input[type="text"],input[type="password"] {
+            width: 200px; /* Set the width of textboxes as needed */
+            padding: 5px; /* Add padding for better appearance */
+            border: 1px solid gray ;
+        }
+
+        .bordered-button {
+            padding: 2px 5px; /* Add padding for button size */
+            border: 2px solid #333; /* Add a 2px solid border with color */
+            background-color: #eee; /* Set background color */
+            color: #333; /* Set text color */
+            text-align: center; /* Center-align text */
+            text-decoration: none; /* Remove underlines */
+            display: inline-block; /* Make buttons inline-block elements */
+            font-size: 16px; /* Set font size */
+            cursor: pointer; /* Add a pointer cursor on hover */
+            border-radius: 5px; /* Add rounded corners */
+        }
+        table {
+          border-collapse: collapse;
+          border-spacing:2px;
+        }
+        th, td {
+          width: 300px;
+          border: 1px solid black;
+          text-align: center;
+          font-weight: bold;
+        }
+        .answer_td {
+          width: 700px;
+          border: 1px solid black;
+          text-align: left;
+        }
+        input[type="text"],input[type="password"] {
+          width: 700px;
+          border: 1px solid black;
+          border-radius: 2px;
+        }
+
+        #declaration {
+            text-align: left;
+        }
+        #Ethnus {
+            text-align: right;
+        }
+        .button-layout {
+            display: flex;
+            justify-content: center;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            color: blue;
+        }
+        .two-rows {
+            display: flex;
+            flex-direction: column;
+        }
+        .two-cols {
+            display: flex;
+            flex-direction: row;
+        }
+        .horizontal_line {
+            width: 100%;
+            border-top: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <table> 
+    <tr>
+        <td>First Name</td>
+        <td class="answer_td"><input type="text" name="first_name"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td class="answer_td"><input type="text" name="last_name"></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td class="answer_td"><input type="text" name="email"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td class="answer_td"><input type="password" name="password"></td>
+    </tr>
+    <tr>
+        <td>Re-enter Password</td>
+        <td class="answer_td"><input type="password" name="re_password"></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td>
+
+            <div class="two-rows" style="font-weight: lighter;"">
+                <div class="two-cols">
+                <input type="radio" name="Male"> <label for="Male">Male</label>
+            </div>
+            <div class="horizontal_line"></div>
+            <div class="two-cols">
+                <input type="radio" name="Male"> <label for="Male">Female</label>
+            </div>
+            </div>
+    </td>
+        
+    </tr>
+    <!-- <tr>
+        <td> <input type="radio" name="Male"> Male</td>
+        <td> <input type="radio" name="Female"> Female</td>
+    </tr>
+    </td>
+</tr> -->
+    <tr>
+        <td>Age:</td>
+        <td class="answer_td"><input type="text" name="age"></td>
+    </tr>
+    <tr>
+        <td>Phone Number</td>
+        <td class="answer_td"><input type="text" name="phone"></td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td class="answer_td"><textarea name="address" rows="6" cols="98"></textarea> </td>
+    </tr>
+    <tr>
+        <td>State</td>
+        <td class="answer_td"><input type="text" name="state"></td>
+    </tr>
+    <tr>
+        <td>Country</td>
+        <td class="answer_td">        
+        <select name="Country">
+            <option value="male" selected disabled hidden>Choose your country</option>
+            <option value="female">India</option>
+            <option value="other">International</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td>Languages known</td>
+        <td class="answer_td" style="font-weight: lighter;">
+            <input type="checkbox" name="english"  />
+            English
+            <input type="checkbox" name="kannada"  />
+            Kannada
+            <input type="checkbox" name="Hindi"  />
+            Hindi
+            <input type="checkbox" name="Telugu"  />
+            Telugu
+        </td>
+    </tr>
+    <tr>
+    <td colspan="2" id="declaration" style="font-weight: lighter;word-spacing:4px ;"><input type="checkbox" name="declaration"  checked/>&nbsp; Hereby I declare all the given details are true</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" id="Ethnus"> Log in to <a href=""> Ethnus </a>website</td>
+    
+    </tr> 
+</table>
+<br>
+<div class="button-layout">
+<input type="submit" class="bordered-button" value="Register">
+</div>
+</body>
+</html>
